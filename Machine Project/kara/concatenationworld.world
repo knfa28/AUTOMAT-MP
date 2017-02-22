@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XmlWorld sizex="9" sizey="9" version="KaraX 1.0 turingkara">
+    <XmlKara direction="3" name="TuringKara" x="1" y="0"/>
+    <XmlWorldObject type="one" x="1" y="0"/>
+    <XmlWorldObject type="one" x="2" y="0"/>
+    <XmlWorldObject type="one" x="3" y="0"/>
+    <XmlWorldObject type="zero" x="4" y="0"/>
+    <XmlWorldObject type="zero" x="5" y="0"/>
+    <XmlWorldObject type="zero" x="6" y="0"/>
+    <XmlWorldObject type="zero" x="7" y="0"/>
+    <XmlWorldObject type="one" x="1" y="2"/>
+    <XmlWorldObject type="one" x="2" y="2"/>
+    <XmlWorldObject type="one" x="3" y="2"/>
+    <XmlWorldObject type="zero" x="4" y="2"/>
+    <XmlWorldObject type="one" x="5" y="2"/>
+    <XmlWorldObject type="one" x="6" y="2"/>
+    <XmlWorldObject type="one" x="7" y="2"/>
+    <XmlWorldObject type="one" x="1" y="4"/>
+    <XmlWorldObject type="zero" x="2" y="4"/>
+    <XmlWorldObject type="zero" x="3" y="4"/>
+    <XmlWorldObject type="zero" x="4" y="4"/>
+    <XmlWorldObject type="zero" x="5" y="4"/>
+    <XmlWorldObject type="zero" x="6" y="4"/>
+    <XmlWorldObject type="one" x="7" y="4"/>
+    <XmlWorldObject type="one" x="1" y="6"/>
+    <XmlWorldObject type="one" x="2" y="6"/>
+    <XmlWorldObject type="one" x="3" y="6"/>
+    <XmlWorldObject type="one" x="4" y="6"/>
+    <XmlWorldObject type="one" x="5" y="6"/>
+    <XmlWorldObject type="one" x="1" y="8"/>
+    <XmlWorldObject type="zero" x="4" y="8"/>
+    <XmlWorldObject type="one" x="5" y="8"/>
+    <XmlWorldObject type="one" x="6" y="8"/>
+    <XmlWorldObject type="zero" x="2" y="8"/>
+    <XmlWorldObject type="zero" x="3" y="8"/>
+</XmlWorld>

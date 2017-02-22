@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XmlStateMachines version="KaraX 1.0 kara">
+    <XmlStateMachine actor="Kara" startState="q0">
+        <XmlState finalstate="false" name="q5" x="284.0" y="355.0">
+            <XmlSensors>
+                <XmlSensor name="mushroomFront"/>
+                <XmlSensor name="treeFront"/>
+            </XmlSensors>
+        </XmlState>
+        <XmlState finalstate="false" name="q4" x="426.0" y="0.0">
+            <XmlSensors>
+                <XmlSensor name="mushroomFront"/>
+            </XmlSensors>
+        </XmlState>
+        <XmlState finalstate="false" name="q0" x="71.0" y="142.0">
+            <XmlSensors/>
+        </XmlState>
+        <XmlState finalstate="false" name="q3" x="142.0" y="284.0">
+            <XmlSensors>
+                <XmlSensor name="onLeaf"/>
+            </XmlSensors>
+        </XmlState>
+        <XmlState finalstate="false" name="q1" x="142.0" y="0.0">
+            <XmlSensors>
+                <XmlSensor name="mushroomFront"/>
+            </XmlSensors>
+        </XmlState>
+        <XmlState finalstate="false" name="q6" x="497.0" y="71.0">
+            <XmlSensors>
+                <XmlSensor name="mushroomFront"/>
+            </XmlSensors>
+        </XmlState>
+        <XmlState finalstate="false" name="q7" x="426.0" y="355.0">
+            <XmlSensors>
+                <XmlSensor name="mushroomFront"/>
+                <XmlSensor name="treeFront"/>
+            </XmlSensors>
+        </XmlState>
+        <XmlState finalstate="false" name="q2" x="284.0" y="-71.0">
+            <XmlSensors>
+                <XmlSensor name="mushroomFront"/>
+                <XmlSensor name="treeFront"/>
+            </XmlSensors>
+        </XmlState>
+        <XmlState finalstate="true" name="stop" x="497.0" y="213.0">
+            <XmlSensors/>
+        </XmlState>
+        <XmlTransition from="q5" to="q7">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="1"/>
+                <XmlSensorValue name="treeFront" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q5" to="stop">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="2"/>
+                <XmlSensorValue name="treeFront" value="1"/>
+            </XmlSensorValues>
+            <XmlCommands/>
+        </XmlTransition>
+        <XmlTransition from="q5" to="stop">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="2"/>
+                <XmlSensorValue name="treeFront" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnLeft"/>
+                <XmlCommand name="move"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q4" to="q6">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="1"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q4" to="stop">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnLeft"/>
+                <XmlCommand name="move"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q0" to="q1">
+            <XmlSensorValues/>
+            <XmlCommands>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q3" to="q5">
+            <XmlSensorValues>
+                <XmlSensorValue name="onLeaf" value="1"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q3" to="stop">
+            <XmlSensorValues>
+                <XmlSensorValue name="onLeaf" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q1" to="q2">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="1"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q1" to="stop">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands/>
+        </XmlTransition>
+        <XmlTransition from="q6" to="q6">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="1"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q6" to="stop">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q7" to="q7">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="1"/>
+                <XmlSensorValue name="treeFront" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q7" to="q4">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="2"/>
+                <XmlSensorValue name="treeFront" value="1"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q7" to="stop">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="2"/>
+                <XmlSensorValue name="treeFront" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q2" to="q2">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="1"/>
+                <XmlSensorValue name="treeFront" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q2" to="q4">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="2"/>
+                <XmlSensorValue name="treeFront" value="1"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="turnRight"/>
+                <XmlCommand name="move"/>
+                <XmlCommand name="turnLeft"/>
+            </XmlCommands>
+        </XmlTransition>
+        <XmlTransition from="q2" to="q3">
+            <XmlSensorValues>
+                <XmlSensorValue name="mushroomFront" value="2"/>
+                <XmlSensorValue name="treeFront" value="2"/>
+            </XmlSensorValues>
+            <XmlCommands>
+                <XmlCommand name="move"/>
+            </XmlCommands>
+        </XmlTransition>
+    </XmlStateMachine>
+    <XmlSensorDefinition description="tree in front?" identifier="treeFront" name="treeFront"/>
+    <XmlSensorDefinition description="tree to the left?" identifier="treeLeft" name="treeLeft"/>
+    <XmlSensorDefinition description="tree to the right?" identifier="treeRight" name="treeRight"/>
+    <XmlSensorDefinition description="mushroom in front?" identifier="mushroomFront" name="mushroomFront"/>
+    <XmlSensorDefinition description="leaf on the ground?" identifier="onLeaf" name="onLeaf"/>
+</XmlStateMachines>
